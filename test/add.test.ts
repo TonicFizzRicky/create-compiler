@@ -4,6 +4,6 @@ import {compiler} from '../src/compiler'
 test("test compiler function",() => {
     const input = `(add 2 (sub 4 3))`;
     const compiledResult = compiler(input)
-    const expectResult = `add(2, sub(4, 3));q`
+    const expectResult = `add(2, sub(4, 3));`
     expect(compiledResult).toBe(expectResult)
 })
